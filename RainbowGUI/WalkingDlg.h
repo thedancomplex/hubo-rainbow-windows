@@ -77,6 +77,7 @@ protected:
 	afx_msg void OnInithands();
 	afx_msg void OnZmpinitpos();
 	afx_msg void OnZmppossave();
+	afx_msg void OnStartMotionRecord();
 	//}}AFX_MSG
 	DECLARE_MESSAGE_MAP()
 

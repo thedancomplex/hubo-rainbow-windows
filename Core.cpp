@@ -5,6 +5,11 @@
 #include "APIs.h"
 #include "mocap_functions.h"	// by Inhyeok
 
+// recording
+//#include <iostream>
+//#include <string>
+//#include <fstream>
+
 
 // for RTX
 PSHARED_DATA	pSharedMemory;			// shared memory data
@@ -85,6 +90,9 @@ unsigned int Ti;
 float	test_Finger[MocapTimeLimit];
 float	NKY_err_short_float[3];
 
+// for record
+FILE* pFile;
+bool firstRun;
 
 //Motion capture by Inhyeok
 extern float _Qlb_19x1[20];	// [x,y,z,qPEL[4],rhy,rhr,rhp,rkn,rap,rar,lhy,lhr,lhp,lkn,lap,lar]
@@ -9810,6 +9818,21 @@ void main(void)
 // timer interrupt service routine for lower body control
 void RTFCNDCL TimerHandler(PVOID context)
 {	
+
+	if(firstRun == false){
+		firstRun = true;
+		pFile = fopen("c://trajHuboAch.traj","w");
+		fprintf(pFile,"%f \n",3.123);
+		//dan 
+//		ofstream File("trajHuboAch.traj");
+//		float array[3] = { 1.1, 1.2, 1.3};
+//		for( int i = 0; i < 3; i++){
+//			File<< array[i] << ", ";
+//			cout<<endl;
+//
+//		}
+		
+	}
 	// check CAN message from ch. 0
 	CanReceiveMsg(CAN0);	// CAN 1st channel
 
@@ -10002,6 +10025,46 @@ void RTFCNDCL TimerHandler(PVOID context)
 	{
 		RequestSensor(CAN0);
 	}
+
+
+	if(pSharedMemory->trajRecordFlad){
+//                       1           5             10             15             20             25             30      
+		fprintf(pFile, "%f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f %f \n",
+			    Joint[RHY].RefAngleCurrent,
+				Joint[RHR].RefAngleCurrent,
+				Joint[RHP].RefAngleCurrent,
+				Joint[RKN].RefAngleCurrent,
+				Joint[RAP].RefAngleCurrent,
+				Joint[RAR].RefAngleCurrent,
+				Joint[LHY].RefAngleCurrent,
+				Joint[LHR].RefAngleCurrent,
+				Joint[LHP].RefAngleCurrent,
+				Joint[LKN].RefAngleCurrent,
+				Joint[LAP].RefAngleCurrent,
+				Joint[LAR].RefAngleCurrent,
+				Joint[RSP].RefAngleCurrent,
+				Joint[RSR].RefAngleCurrent,
+				Joint[RSY].RefAngleCurrent,
+				Joint[REB].RefAngleCurrent,
+				Joint[RWY].RefAngleCurrent,
+				Joint[RWP].RefAngleCurrent,
+				Joint[RWP].RefAngleCurrent,
+				Joint[LSP].RefAngleCurrent,
+				Joint[LSR].RefAngleCurrent,
+				Joint[LSY].RefAngleCurrent,
+				Joint[LEB].RefAngleCurrent,
+				Joint[LWY].RefAngleCurrent,
+				Joint[LWP].RefAngleCurrent,
+				Joint[LWP].RefAngleCurrent,
+				Joint[NKY].RefAngleCurrent,
+				Joint[NK1].RefAngleCurrent,
+				Joint[NK2].RefAngleCurrent,
+				Joint[WST].RefAngleCurrent
+				);
+		fflush(pFile);
+	}
+// Joint[RSR].RefAngleToGo
+
 
 	timeIndex++;
 }

@@ -86,6 +86,9 @@ typedef struct _SHARED_DATA_
 //HandShake--------------------------------------------------------------------------------------//
 	int				ShakeHandsFlag;
 
+// Record joint values
+	bool			trajRecordFlad;
+
 } SHARED_DATA, *PSHARED_DATA;
 
 #endif

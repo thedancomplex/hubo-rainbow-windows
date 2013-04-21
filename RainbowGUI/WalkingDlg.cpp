@@ -101,6 +101,7 @@ BEGIN_MESSAGE_MAP(CWalkingDlg, CPropertyPage)
 	ON_BN_CLICKED(IDC_INITHANDS, OnInithands)
 	ON_BN_CLICKED(IDC_ZMPINITPOS, OnZmpinitpos)
 	ON_BN_CLICKED(IDC_ZMPPOSSAVE, OnZmppossave)
+	ON_BN_CLICKED(IDC_START_MOTION_RECORD, OnStartMotionRecord)
 	//}}AFX_MSG_MAP
 END_MESSAGE_MAP()
 
@@ -897,4 +898,11 @@ void CWalkingDlg::OnZmppossave()
 		pSharedMemory->CommandFlag = SAVE_ZMP_INIT_POS;		
 	}
 	else AfxMessageBox("Other Command is activated..!!");
+}
+
+void CWalkingDlg::OnStartMotionRecord() 
+{
+	// TODO: Add your control notification handler code here
+	pSharedMemory->trajRecordFlad = true;
+	
 }
