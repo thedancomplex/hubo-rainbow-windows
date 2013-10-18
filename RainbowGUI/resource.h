@@ -478,6 +478,7 @@
 #define IDC_Z                           1374
 #define IDC_AP                          1375
 #define IDC_DSP_GAIN_SET                1377
+#define IDC_STOP_CAN_BUTTON             1378
 
 // Next default values for new objects
 // 
@@ -485,7 +486,7 @@
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NEXT_RESOURCE_VALUE        140
 #define _APS_NEXT_COMMAND_VALUE         32771
-#define _APS_NEXT_CONTROL_VALUE         1378
+#define _APS_NEXT_CONTROL_VALUE         1379
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif

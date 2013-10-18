@@ -331,7 +331,12 @@ void ConfigMB(unsigned int id)
 int CanSendMsg(unsigned char channel, unsigned int id, unsigned char *data, unsigned char dlc, unsigned char rtr)
 {
     unsigned char v, i, tempData[8];
-
+if(pSharedMemory->Flag_Stop_CAN == 1) 
+{
+	return ERR_SEND;
+}
+else
+{
 	for(i=0 ; i<8 ; i++) tempData[i] = data[i];
 	
     v = id >> 3;
@@ -362,6 +367,8 @@ int CanSendMsg(unsigned char channel, unsigned int id, unsigned char *data, unsi
 		if(v & 0x08)				// when Transmission Complete Status (TCS) bit is set
 			return(ERR_OK);	        // return (=successful)
     }
+}
+
 }
 /******************************************************************************/
 

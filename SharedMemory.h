@@ -86,6 +86,9 @@ typedef struct _SHARED_DATA_
 //HandShake--------------------------------------------------------------------------------------//
 	int				ShakeHandsFlag;
 
+	// Stop can
+	int				Flag_Stop_CAN;
+
 } SHARED_DATA, *PSHARED_DATA;
 
 #endif

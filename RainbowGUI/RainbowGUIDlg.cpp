@@ -92,6 +92,7 @@ BEGIN_MESSAGE_MAP(CRainbowGUIDlg, CDialog)
 	ON_BN_CLICKED(IDC_CHECKDEVICE, OnCheckdevice)
 	ON_BN_CLICKED(IDC_CONTROLONOFF, OnControlonoff)
 	ON_WM_TIMER()
+	ON_BN_CLICKED(IDC_STOP_CAN_BUTTON, OnStopCanButton)
 	//}}AFX_MSG_MAP
 END_MESSAGE_MAP()
 
@@ -741,4 +742,11 @@ void CRainbowGUIDlg::OnTimer(UINT nIDEvent)
 	}
 
 	CDialog::OnTimer(nIDEvent);
+}
+
+void CRainbowGUIDlg::OnStopCanButton() 
+{
+	// TODO: Add your control notification handler code here
+	pSharedMemory->Flag_Stop_CAN = 1;
+	
 }

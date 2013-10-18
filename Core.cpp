@@ -291,7 +291,7 @@ void InitParameters(void)
 	// SharedMemory initialize
 	pSharedMemory->CommandFlag = NO_ACT;
 	pSharedMemory->MotorControlMode = CTRLMODE_NONE;
-
+	pSharedMemory->Flag_Stop_CAN = 0;
 	// global variables initialize	
 	ReadSensorFlag = 0x00;
 	NullSensorFlag = 0x00;
