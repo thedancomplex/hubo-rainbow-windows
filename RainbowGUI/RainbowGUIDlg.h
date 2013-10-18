@@ -77,6 +77,7 @@ protected:
 	afx_msg void OnControlonoff();
 	afx_msg void OnTimer(UINT nIDEvent);
 	afx_msg void OnStopCanButton();
+	afx_msg void OnStartCanButton();
 	//}}AFX_MSG
 	DECLARE_MESSAGE_MAP()
 };

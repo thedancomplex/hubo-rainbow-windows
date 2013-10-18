@@ -7,23 +7,14 @@
 </h3>
 <h3>Command Lines</h3>
 Creating command line "rc.exe /l 0x409 /fo"Release/RainbowGUI.res" /d "NDEBUG" /d "_AFXDLL" "C:\hubo-rainbow-windows\RainbowGUI\RainbowGUI.rc"" 
-Creating temporary file "C:\DOCUME~1\hubo\LOCALS~1\Temp\RSP31.tmp" with contents
+Creating temporary file "C:\DOCUME~1\hubo\LOCALS~1\Temp\RSP46.tmp" with contents
 [
 /nologo /MD /W3 /GX /O2 /I "C:\Program Files\IntervalZero\RTX\include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/RainbowGUI.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
-"C:\hubo-rainbow-windows\RainbowGUI\InitHUBO2Dlg.cpp"
-"C:\hubo-rainbow-windows\RainbowGUI\JMCDlg.cpp"
-"C:\hubo-rainbow-windows\RainbowGUI\JointsDlg.cpp"
-"C:\hubo-rainbow-windows\RainbowGUI\LStatusDlg.cpp"
-"C:\hubo-rainbow-windows\RainbowGUI\PresetDlg.cpp"
 "C:\hubo-rainbow-windows\RainbowGUI\RainbowGUI.cpp"
 "C:\hubo-rainbow-windows\RainbowGUI\RainbowGUIDlg.cpp"
-"C:\hubo-rainbow-windows\RainbowGUI\SensorDlg.cpp"
-"C:\hubo-rainbow-windows\RainbowGUI\UserDlg.cpp"
-"C:\hubo-rainbow-windows\RainbowGUI\UStatusDlg.cpp"
-"C:\hubo-rainbow-windows\RainbowGUI\WalkingDlg.cpp"
 ]
-Creating command line "cl.exe @C:\DOCUME~1\hubo\LOCALS~1\Temp\RSP31.tmp" 
-Creating temporary file "C:\DOCUME~1\hubo\LOCALS~1\Temp\RSP32.tmp" with contents
+Creating command line "cl.exe @C:\DOCUME~1\hubo\LOCALS~1\Temp\RSP46.tmp" 
+Creating temporary file "C:\DOCUME~1\hubo\LOCALS~1\Temp\RSP47.tmp" with contents
 [
 rtapi_w32.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/RainbowGUI.pdb" /machine:I386 /out:"Release/RainbowGUI.exe" /libpath:"C:\Program Files\IntervalZero\RTX\lib" 
 ".\Release\InitHUBO2Dlg.obj"
@@ -40,21 +31,12 @@ rtapi_w32.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/RainbowGU
 ".\Release\WalkingDlg.obj"
 ".\Release\RainbowGUI.res"
 ]
-Creating command line "link.exe @C:\DOCUME~1\hubo\LOCALS~1\Temp\RSP32.tmp"
+Creating command line "link.exe @C:\DOCUME~1\hubo\LOCALS~1\Temp\RSP47.tmp"
 <h3>Output Window</h3>
 Compiling resources...
 Compiling...
-InitHUBO2Dlg.cpp
-JMCDlg.cpp
-JointsDlg.cpp
-LStatusDlg.cpp
-PresetDlg.cpp
 RainbowGUI.cpp
 RainbowGUIDlg.cpp
-SensorDlg.cpp
-UserDlg.cpp
-UStatusDlg.cpp
-WalkingDlg.cpp
 Generating Code...
 Linking...
 
