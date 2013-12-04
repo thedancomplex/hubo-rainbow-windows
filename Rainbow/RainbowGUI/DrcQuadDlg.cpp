@@ -125,7 +125,8 @@ void CDrcQuadDlg::OnTransform()
 	{
 		pSharedMemory->temp_fHand_threshold = 50.f;
 
-		if ( (fp =fopen( "C:\\Rainbow_DRC\\WB_Data\\gain_cloop_quad.txt","r")) == NULL )
+		//if ( (fp =fopen( "C:\\Rainbow_DRC\\WB_Data\\gain_cloop_quad.txt","r")) == NULL )
+		if ( (fp =fopen( "..\\..\\..\\WB_Data\\gain_cloop_quad.txt","r")) == NULL )
 		{
 			AfxMessageBox("Data file 'gain_cloop_quad.txt' was not found.");		
 			return;
@@ -137,7 +138,8 @@ void CDrcQuadDlg::OnTransform()
 		}
 		fclose(fp);
 
-		if ( (fp =fopen( "C:\\Rainbow_DRC\\WB_Data\\transform_quad.txt","r")) == NULL )
+		//if ( (fp =fopen( "C:\\Rainbow_DRC\\WB_Data\\transform_quad.txt","r")) == NULL )
+		if ( (fp =fopen( "..\\..\\..\\WB_Data\\transform_quad.txt","r")) == NULL )
 		{
 			AfxMessageBox("Data file 'transform_quad.txt' was not found.");		
 			return;
@@ -199,7 +201,8 @@ void CDrcQuadDlg::OnKirkStart()
 	{
 		pSharedMemory->temp_fHand_threshold = 50.f;
 
-		if ( (fp =fopen( "C:\\Rainbow_DRC\\WB_Data\\gain_cloop_biped.txt","r")) == NULL )
+		//if ( (fp =fopen( "C:\\Rainbow_DRC\\WB_Data\\gain_cloop_biped.txt","r")) == NULL )
+		if ( (fp =fopen( "..\\..\\..\\WB_Data\\gain_cloop_biped.txt","r")) == NULL )
 		{
 			AfxMessageBox("Data file 'gain_cloop_biped.txt' was not found.");		
 			return;

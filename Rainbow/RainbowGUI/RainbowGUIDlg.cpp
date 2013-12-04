@@ -92,8 +92,8 @@ BEGIN_MESSAGE_MAP(CRainbowGUIDlg, CDialog)
 	ON_BN_CLICKED(IDC_LOADPARAM, OnLoadparam)
 	ON_BN_CLICKED(IDC_CHECKDEVICE, OnCheckdevice)
 	ON_BN_CLICKED(IDC_CONTROLONOFF, OnControlonoff)
-	ON_WM_TIMER()
 	ON_MESSAGE(WM_COMM_READ, OnReceive)    // Communication Message Handleer
+	ON_BN_CLICKED(IDC_BUTTON_CAN_ON_OFF, OnButtonCanOnOff)
 	//}}AFX_MSG_MAP
 END_MESSAGE_MAP()
 
@@ -217,7 +217,8 @@ bool CRainbowGUIDlg::RTXOn()
 {
 //	LPCTSTR RTSS_RUNNER = "..\\RAINBOW___Win32_RTSS_Release\\RAINBOW.rtss";
 	
-	LPCTSTR RTSS_RUNNER = "C:\\Rainbow_DRC\\Rainbow\\Rainbow___Win32_RTSS_Release\\RAINBOW.rtss";
+	//LPCTSTR RTSS_RUNNER = "C:\\Rainbow_DRC\\Rainbow\\Rainbow___Win32_RTSS_Release\\RAINBOW.rtss";
+	LPCTSTR RTSS_RUNNER = "..\\..\\..\\Rainbow\\Rainbow___Win32_RTSS_Release\\RAINBOW.rtss";
 	PROCESS_INFORMATION pi;
 	
 	// initialize SharedMemory
@@ -297,7 +298,7 @@ void CRainbowGUIDlg::OnCheckdevice()
 		GetDlgItem(IDC_CONTROLONOFF)->EnableWindow(TRUE);
 
 //		Sleep(500);
-		pSharedMemory->CommandFlag = ENABLE_FET;
+		//pSharedMemory->CommandFlag = ENABLE_FET;
 	}
 }
 
@@ -1153,4 +1154,25 @@ int CRainbowGUIDlg::findmax(float data[], unsigned int n, float *result_max, uns
 	*i_max = n_max;
 
 	return 0;
+}
+
+
+void CRainbowGUIDlg::OnButtonCanOnOff() 
+{
+	// TODO: Add your control notification handler code here
+	if(pSharedMemory->FLAG_OFF_CAN_ALL == 0) {
+		/* Turn CAN OFF */
+		pSharedMemory->FLAG_OFF_CAN_ALL = 1;
+		GetDlgItem(IDC_STATIC_CAN_ON_OFF)->SetWindowText("OFF");
+		GetDlgItem(IDC_BUTTON_CAN_ON_OFF)->SetWindowText("CAN ON");
+		
+		
+	}
+	else if(pSharedMemory->FLAG_OFF_CAN_ALL == 1) {
+		/* Turn CAN ON */
+		pSharedMemory->FLAG_OFF_CAN_ALL = 0;
+		GetDlgItem(IDC_STATIC_CAN_ON_OFF)->SetWindowText("OFF");
+		GetDlgItem(IDC_BUTTON_CAN_ON_OFF)->SetWindowText("CAN ON");
+	}
+	
 }

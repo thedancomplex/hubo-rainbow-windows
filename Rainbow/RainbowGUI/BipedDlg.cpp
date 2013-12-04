@@ -186,7 +186,8 @@ void CBipedDlg::OnIkOn()
 	{
 		pSharedMemory->temp_fHand_threshold = 50.f;
 
-		if ( (fp =fopen( "C:\\Rainbow_DRC\\WB_Data\\gain_cloop_biped.txt","r")) == NULL )
+		//if ( (fp =fopen( "C:\\Rainbow_DRC\\WB_Data\\gain_cloop_biped.txt","r")) == NULL )
+		if ( (fp =fopen( "..\\..\\..\\WB_Data\\gain_cloop_biped.txt","r")) == NULL )
 		{
 			AfxMessageBox("Data file 'gain_cloop_biped.txt' was not found.");		
 			return;
@@ -411,11 +412,13 @@ void CBipedDlg::OnKirkZmpInitLoad()
 {
 	FILE *fp;
 
-	fp = fopen("C:\\Rainbow_DRC\\WB_Data\\InitZMPData.txt","r");
+	//fp = fopen("C:\\Rainbow_DRC\\WB_Data\\InitZMPData.txt","r");
+	fp = fopen("..\\..\\..\\WB_Data\\InitZMPData.txt","r");
 
 	if(fp == NULL)
 	{
-		AfxMessageBox("C:\\Rainbow_DRC\\WB_Data\\InitZMPData.txt is not found.");			
+//		AfxMessageBox("C:\\Rainbow_DRC\\WB_Data\\InitZMPData.txt is not found.");			
+		AfxMessageBox("..\\..\\..\\WB_Data\\InitZMPData.txt is not found.");			
 		return;
 	}
 	else
@@ -449,7 +452,8 @@ void CBipedDlg::OnKirkZmpInitSave()
 
 	FILE *fp;
 	
-	fp = fopen("C:\\Rainbow_DRC\\WB_Data\\InitZMPData.txt","w");
+	//fp = fopen("C:\\Rainbow_DRC\\WB_Data\\InitZMPData.txt","w");
+	fp = fopen("..\\..\\..\\WB_Data\\InitZMPData.txt","w");
 	
 	fprintf(fp, "%f \n", pSharedMemory->Del_RAP_Init);
 	fprintf(fp, "%f \n", pSharedMemory->Del_RAR_Init);

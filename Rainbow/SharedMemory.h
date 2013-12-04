@@ -213,6 +213,13 @@ typedef struct _SHARED_DATA_
 	char			RPS_POS_MODE;
 	char			HUG_POS_MODE;
 
+
+	/* flags */
+	int				FLAG_OFF_CAN0;
+	int				FLAG_OFF_CAN1;
+	int				FLAG_OFF_CAN_ALL;
+
+
 } SHARED_DATA, *PSHARED_DATA;
 
 #endif

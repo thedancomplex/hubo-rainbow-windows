@@ -302,7 +302,8 @@ void CDRCtestDlg::OnDrcFreqReady()
 		pSharedMemory->move_sec = (float)fabs((float)atof(strText));
 
 
-		if ( (fp =fopen( "C:\\Rainbow_DRC\\WB_Data\\gain_cloop_quad.txt","r")) == NULL )
+		//if ( (fp =fopen( "C:\\Rainbow_DRC\\WB_Data\\gain_cloop_quad.txt","r")) == NULL )
+		if ( (fp =fopen( "..\\..\\..\\WB_Data\\gain_cloop_quad.txt","r")) == NULL )
 		{
 			AfxMessageBox("Data file 'gain_cloop_quad.txt' was not found.");		
 			return;
@@ -753,8 +754,9 @@ void CDRCtestDlg::OnDrcSr()
 
 		GetDlgItem(IDC_EDIT_TEMP22)->GetWindowText(strText);
 		pSharedMemory->move_sec = (float)fabs((float)atof(strText));
-		
-		if ( (fp =fopen( "C:\\Rainbow_DRC\\WB_Data\\steering_data.txt","r")) == NULL )
+
+		//if ( (fp =fopen( "C:\\Rainbow_DRC\\WB_Data\\steering_data.txt","r")) == NULL )		
+		if ( (fp =fopen( "..\\..\\..\\WB_Data\\steering_data.txt","r")) == NULL )
 		{
 			AfxMessageBox("Data file 'steering_data.txt' was not found.");		
 			return;
@@ -765,7 +767,8 @@ void CDRCtestDlg::OnDrcSr()
 		fscanf(fp,"%f %f %f %f %f %f", &(pSharedMemory->ref_lhy), &(pSharedMemory->ref_lhr), &(pSharedMemory->ref_lhp), &(pSharedMemory->ref_lkn), &(pSharedMemory->ref_lap), &(pSharedMemory->ref_lar));
 		fclose(fp);
 
-		if ( (fp =fopen( "C:\\Rainbow_DRC\\WB_Data\\steering_data2.txt","r")) == NULL )
+		//if ( (fp =fopen( "C:\\Rainbow_DRC\\WB_Data\\steering_data2.txt","r")) == NULL )
+		if ( (fp =fopen( "..\\..\\..\\WB_Data\\steering_data2.txt","r")) == NULL )
 		{
 			AfxMessageBox("Data file 'steering_data2.txt' was not found.");		
 			return;
@@ -776,6 +779,7 @@ void CDRCtestDlg::OnDrcSr()
 
 
 		if ( (fp =fopen( "C:\\Rainbow_DRC\\WB_Data\\gain_cloop_steering.txt","r")) == NULL )
+		if ( (fp =fopen( "..\\..\\..\\WB_Data\\gain_cloop_steering.txt","r")) == NULL )
 		{
 			AfxMessageBox("Data file 'gain_cloop_steering.txt' was not found.");		
 			return;
@@ -1028,7 +1032,8 @@ void CDRCtestDlg::OnDrcLad()
 		pSharedMemory->move_sec = (float)fabs((float)atof(strText));
 
 		
-		if ( (fp =fopen( "C:\\Rainbow_DRC\\WB_Data\\ladder_climbing_data.txt","r")) == NULL )
+		//if ( (fp =fopen( "C:\\Rainbow_DRC\\WB_Data\\ladder_climbing_data.txt","r")) == NULL )
+		if ( (fp =fopen( "..\\..\\..\\WB_Data\\ladder_climbing_data.txt","r")) == NULL )
 		{
 			AfxMessageBox("Data file 'ladder_climbing_data.txt' was not found.");		
 			return;
@@ -1039,7 +1044,8 @@ void CDRCtestDlg::OnDrcLad()
 		fscanf(fp,"%f %f %f %f %f %f", &(pSharedMemory->ref_lhy), &(pSharedMemory->ref_lhr), &(pSharedMemory->ref_lhp), &(pSharedMemory->ref_lkn), &(pSharedMemory->ref_lap), &(pSharedMemory->ref_lar));
 		fclose(fp);
 
-		if ( (fp =fopen( "C:\\Rainbow_DRC\\WB_Data\\gain_cloop_ladder.txt","r")) == NULL )
+		//if ( (fp =fopen( "C:\\Rainbow_DRC\\WB_Data\\gain_cloop_ladder.txt","r")) == NULL )
+		if ( (fp =fopen( "..\\..\\..\\WB_Data\\gain_cloop_ladder.txt","r")) == NULL )
 		{
 			AfxMessageBox("Data file 'gain_cloop_ladder.txt' was not found.");		
 			return;
@@ -1402,7 +1408,8 @@ void CDRCtestDlg::OnDrcLad10()
 		{
 			if(pSharedMemory->position_mode_flag == 0 && pSharedMemory->ladder_demo == 1)
 			{
-				if ( (fp =fopen( "C:\\Rainbow_DRC\\WB_Data\\offline_traj_ladder_1.txt","r")) == NULL )
+				//if ( (fp =fopen( "C:\\Rainbow_DRC\\WB_Data\\offline_traj_ladder_1.txt","r")) == NULL )
+				if ( (fp =fopen( "..\\..\\..\\WB_Data\\offline_traj_ladder_1.txt","r")) == NULL )
 				{
 					AfxMessageBox("Data file offline_traj_ladder_1.txt was not found");		
 					return;
@@ -1452,7 +1459,8 @@ void CDRCtestDlg::OnDrcLad11()
 		{
 			if(pSharedMemory->position_mode_flag == 0 && pSharedMemory->ladder_demo == 1)
 			{
-				if ( (fp =fopen( "C:\\Rainbow_DRC\\WB_Data\\offline_traj_ladder_2.txt","r")) == NULL )
+				//if ( (fp =fopen( "C:\\Rainbow_DRC\\WB_Data\\offline_traj_ladder_2.txt","r")) == NULL )
+				if ( (fp =fopen( "..\\..\\..\\WB_Data\\offline_traj_ladder_2.txt","r")) == NULL )
 				{
 					AfxMessageBox("Data file offline_traj_ladder_2.txt was not found");		
 					return;
@@ -1532,7 +1540,8 @@ void CDRCtestDlg::OnDrcLad13()
 		{
 			if(pSharedMemory->position_mode_flag == 0 && pSharedMemory->ladder_demo == 1)
 			{
-				if ( (fp =fopen( "C:\\Rainbow_DRC\\WB_Data\\offline_traj_ladder_1b.txt","r")) == NULL )
+				//if ( (fp =fopen( "C:\\Rainbow_DRC\\WB_Data\\offline_traj_ladder_1b.txt","r")) == NULL )
+				if ( (fp =fopen( "..\\..\\..\\WB_Data\\offline_traj_ladder_1b.txt","r")) == NULL )
 				{
 					AfxMessageBox("Data file offline_traj_ladder_1b.txt was not found");		
 					return;
@@ -1583,7 +1592,8 @@ void CDRCtestDlg::OnDrcLad14()
 		{
 			if(pSharedMemory->position_mode_flag == 0 && pSharedMemory->ladder_demo == 1)
 			{
-				if ( (fp =fopen( "C:\\Rainbow_DRC\\WB_Data\\offline_traj_ladder_2b.txt","r")) == NULL )
+				//if ( (fp =fopen( "C:\\Rainbow_DRC\\WB_Data\\offline_traj_ladder_2b.txt","r")) == NULL )
+				if ( (fp =fopen( "..\\..\\..\\WB_Data\\offline_traj_ladder_2b.txt","r")) == NULL )
 				{
 					AfxMessageBox("Data file offline_traj_ladder_2b.txt was not found");		
 					return;
@@ -1843,7 +1853,8 @@ void CDRCtestDlg::OnDrcStart2()
 			pSharedMemory->temp_hand_LC_on_flag = 1;
 
 
-		if ( (fp =fopen( "C:\\Rainbow_DRC\\WB_Data\\gain_cloop_quad.txt","r")) == NULL )
+		//if ( (fp =fopen( "C:\\Rainbow_DRC\\WB_Data\\gain_cloop_quad.txt","r")) == NULL )
+		if ( (fp =fopen( "..\\..\\..\\WB_Data\\gain_cloop_quad.txt","r")) == NULL )
 		{
 			AfxMessageBox("Data file 'gain_cloop_quad.txt' was not found.");		
 			return;
@@ -1855,7 +1866,8 @@ void CDRCtestDlg::OnDrcStart2()
 		}
 		fclose(fp);
 
-		if ( (fp =fopen( "C:\\Rainbow_DRC\\WB_Data\\transform_quad.txt","r")) == NULL )
+		//if ( (fp =fopen( "C:\\Rainbow_DRC\\WB_Data\\transform_quad.txt","r")) == NULL )
+        if ( (fp =fopen( "..\\..\\..\\WB_Data\\transform_quad.txt","r")) == NULL )
 		{
 			AfxMessageBox("Data file 'transform_quad.txt' was not found.");		
 			return;

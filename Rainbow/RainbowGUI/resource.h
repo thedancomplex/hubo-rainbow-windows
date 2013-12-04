@@ -1033,8 +1033,11 @@
 #define IDC_EDIT99                      1585
 #define IDC_EDIT100                     1586
 #define IDC_EDIT101                     1587
+#define IDC_BUTTON_CAN_ON_OFF           1587
 #define IDC_EDIT102                     1588
+#define IDC_STATIC_CAN_ON_OFF_TOP       1588
 #define IDC_EDIT103                     1589
+#define IDC_STATIC_CAN_ON_OFF           1589
 #define IDC_EDIT104                     1590
 #define IDC_EDIT165                     1591
 #define IDC_EDIT105                     1721
@@ -1104,7 +1107,7 @@
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NEXT_RESOURCE_VALUE        148
 #define _APS_NEXT_COMMAND_VALUE         32771
-#define _APS_NEXT_CONTROL_VALUE         1586
+#define _APS_NEXT_CONTROL_VALUE         1590
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif

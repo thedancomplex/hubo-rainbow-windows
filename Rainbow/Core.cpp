@@ -307,6 +307,11 @@ void InitParameters(void)
 	pSharedMemory->MotorControlMode = CTRLMODE_NONE;
 	pSharedMemory->LandingFz = 100.0f;
 
+	/* Turn Can On for default */
+	pSharedMemory->FLAG_OFF_CAN0 = 0;
+	pSharedMemory->FLAG_OFF_CAN1 = 0;
+	pSharedMemory->FLAG_OFF_CAN_ALL = 0;
+
 	// global variables initialize	
 	ReadSensorFlag = 0x00;
 	NullSensorFlag = 0x00;

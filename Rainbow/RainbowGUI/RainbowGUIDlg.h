@@ -89,6 +89,8 @@ protected:
 	afx_msg void OnControlonoff();
 	afx_msg void OnTimer(UINT nIDEvent);
 	afx_msg void ParsingRxData(CString strRx);
+	afx_msg void OnButtonCanOnOff();
+	afx_msg void OnButtonCanOnoff();
 	//}}AFX_MSG
 	DECLARE_MESSAGE_MAP()
 };
