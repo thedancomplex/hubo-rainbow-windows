@@ -218,7 +218,7 @@ bool CRainbowGUIDlg::RTXOn()
 //	LPCTSTR RTSS_RUNNER = "..\\RAINBOW___Win32_RTSS_Release\\RAINBOW.rtss";
 	
 	//LPCTSTR RTSS_RUNNER = "C:\\Rainbow_DRC\\Rainbow\\Rainbow___Win32_RTSS_Release\\RAINBOW.rtss";
-	LPCTSTR RTSS_RUNNER = "..\\..\\..\\Rainbow\\Rainbow___Win32_RTSS_Release\\RAINBOW.rtss";
+	LPCTSTR RTSS_RUNNER = "..\\Rainbow___Win32_RTSS_Release\\RAINBOW.rtss";
 	PROCESS_INFORMATION pi;
 	
 	// initialize SharedMemory
@@ -298,7 +298,7 @@ void CRainbowGUIDlg::OnCheckdevice()
 		GetDlgItem(IDC_CONTROLONOFF)->EnableWindow(TRUE);
 
 //		Sleep(500);
-		//pSharedMemory->CommandFlag = ENABLE_FET;
+		pSharedMemory->CommandFlag = ENABLE_FET;
 	}
 }
 
@@ -1171,8 +1171,8 @@ void CRainbowGUIDlg::OnButtonCanOnOff()
 	else if(pSharedMemory->FLAG_OFF_CAN_ALL == 1) {
 		/* Turn CAN ON */
 		pSharedMemory->FLAG_OFF_CAN_ALL = 0;
-		GetDlgItem(IDC_STATIC_CAN_ON_OFF)->SetWindowText("OFF");
-		GetDlgItem(IDC_BUTTON_CAN_ON_OFF)->SetWindowText("CAN ON");
+		GetDlgItem(IDC_STATIC_CAN_ON_OFF)->SetWindowText("ON");
+		GetDlgItem(IDC_BUTTON_CAN_ON_OFF)->SetWindowText("CAN OFF");
 	}
 	
 }

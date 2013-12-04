@@ -339,7 +339,8 @@ void ConfigMB(unsigned int id)
 int CanSendMsg(unsigned char channel, unsigned int id, unsigned char *data, unsigned char dlc, unsigned char rtr)
 {
   if(pSharedMemory->FLAG_OFF_CAN_ALL == 1) { 
-    return(ERR_SEND);		// fail to send
+    //return(ERR_SEND);		// fail to send
+	return(ERR_OK);	        // return (=successful)
   }
   else {
     unsigned char v, i, tempData[8];

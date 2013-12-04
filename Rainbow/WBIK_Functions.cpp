@@ -5855,7 +5855,7 @@ int LoadControllerParamter(void)
 	FILE *fp;
 	
 	//if ( (fp =fopen( "C:\\Rainbow_DRC\\WB_Data\\controller_dsp_f_DRC_biped.txt","r")) == NULL )
-	if ( (fp =fopen( "..\\..\\..\\WB_Data\\controller_dsp_f_DRC_biped.txt","r")) == NULL )
+	if ( (fp =fopen( "..\\..\\WB_Data\\controller_dsp_f_DRC_biped.txt","r")) == NULL )
 	{
 		printf("Data file 'controller_dsp_f_DRC_biped.txt' was not found.\n");		
 		return 1;
@@ -5877,7 +5877,7 @@ int LoadControllerParamter(void)
 	fclose(fp);
 
     //if ( (fp =fopen( "C:\\Rainbow_DRC\\WB_Data\\controller_dsp_s_DRC_biped.txt","r")) == NULL )
-	if ( (fp =fopen( "..\\..\\..\\WB_Data\\controller_dsp_s_DRC_biped.txt","r")) == NULL )
+	if ( (fp =fopen( "..\\..\\WB_Data\\controller_dsp_s_DRC_biped.txt","r")) == NULL )
 	{
 		printf("Data file 'controller_dsp_s_DRC_biped.txt' was not found.\n");		
 		return 1;
@@ -5899,7 +5899,7 @@ int LoadControllerParamter(void)
 	fclose(fp);
 
 	//if ( (fp =fopen( "C:\\Rainbow_DRC\\WB_Data\\controller_ssp_s_DRC_biped.txt","r")) == NULL )
-	if ( (fp =fopen( "..\\..\\..\\WB_Data\\controller_ssp_s_DRC_biped.txt","r")) == NULL )
+	if ( (fp =fopen( "..\\..\\WB_Data\\controller_ssp_s_DRC_biped.txt","r")) == NULL )
 	{
 		printf("Data file 'controller_ssp_s_DRC_biped.txt' was not found.\n");		
 		return 1;
@@ -5921,7 +5921,7 @@ int LoadControllerParamter(void)
 	fclose(fp);
 
 	//if ( (fp =fopen( "C:\\Rainbow_DRC\\WB_Data\\controller_ssp_f_DRC_biped.txt","r")) == NULL )
-	if ( (fp =fopen( "..\\..\\..\\WB_Data\\controller_ssp_f_DRC_biped.txt","r")) == NULL )
+	if ( (fp =fopen( "..\\..\\WB_Data\\controller_ssp_f_DRC_biped.txt","r")) == NULL )
 	{
 		printf("Data file 'controller_ssp_f_DRC_biped.txt' was not found.\n");		
 		return 1;
@@ -5943,7 +5943,7 @@ int LoadControllerParamter(void)
 	fclose(fp);
 
 	//if ( (fp =fopen( "C:\\Rainbow_DRC\\WB_Data\\controller_dsp_f_DRC_quad.txt","r")) == NULL )
-	if ( (fp =fopen( "..\\..\\..\\WB_Data\\controller_dsp_f_DRC_quad.txt","r")) == NULL )
+	if ( (fp =fopen( "..\\..\\WB_Data\\controller_dsp_f_DRC_quad.txt","r")) == NULL )
 	{
 		printf("Data file 'controller_dsp_f_DRC_quad.txt' was not found.\n");		
 		return 1;
@@ -5964,7 +5964,7 @@ int LoadControllerParamter(void)
 		&(_Bss_DSP_F_QUAD_4x1[1]), &(_Bss_DSP_F_QUAD_4x1[2]), &(_Bss_DSP_F_QUAD_4x1[3]), &(_Bss_DSP_F_QUAD_4x1[4]));
 	fclose(fp);
 //    if ( (fp =fopen( "C:\\Rainbow_DRC\\WB_Data\\controller_dsp_s_DRC_quad.txt","r")) == NULL )
-	if ( (fp =fopen( "..\\..\\..\\WB_Data\\controller_dsp_s_DRC_quad.txt","r")) == NULL )
+	if ( (fp =fopen( "..\\..\\WB_Data\\controller_dsp_s_DRC_quad.txt","r")) == NULL )
 	{
 		printf("Data file 'controller_dsp_s_DRC_quad.txt' was not found.\n");		
 		return 1;
@@ -5986,7 +5986,7 @@ int LoadControllerParamter(void)
 	fclose(fp);
 
 	//if ( (fp =fopen( "C:\\Rainbow_DRC\\WB_Data\\controller_ssp_s_DRC_quad.txt","r")) == NULL )
-	if ( (fp =fopen( "..\\..\\..\\WB_Data\\controller_ssp_s_DRC_quad.txt","r")) == NULL )
+	if ( (fp =fopen( "..\\..\\WB_Data\\controller_ssp_s_DRC_quad.txt","r")) == NULL )
 	{
 		printf("Data file 'controller_ssp_s_DRC_quad.txt' was not found.\n");		
 		return 1;
@@ -6008,7 +6008,7 @@ int LoadControllerParamter(void)
 	fclose(fp);
 
 	//if ( (fp =fopen( "C:\\Rainbow_DRC\\WB_Data\\controller_ssp_f_DRC_quad.txt","r")) == NULL )
-	if ( (fp =fopen( "..\\..\\..\\WB_Data\\controller_ssp_f_DRC_quad.txt","r")) == NULL )
+	if ( (fp =fopen( "..\\..\\WB_Data\\controller_ssp_f_DRC_quad.txt","r")) == NULL )
 	{
 		printf("Data file 'controller_ssp_f_DRC_quad.txt' was not found.\n");		
 		return 1;
@@ -6150,7 +6150,7 @@ int LoadOfflineTraj(int mode)
 		break;
 	case 8:
 //		if ( (fp =fopen( "C:\\Rainbow_DRC\\WB_Data\\offline_traj_drc.txt","r")) == NULL )
-		if ( (fp =fopen( "..\\..\\..\\WB_Data\\offline_traj_drc.txt","r")) == NULL )
+		if ( (fp =fopen( "..\\..\\WB_Data\\offline_traj_drc.txt","r")) == NULL )
 		{
 			printf("Data file offline_traj_drc.txt was not found\n");		
 			return 1;
@@ -6158,7 +6158,7 @@ int LoadOfflineTraj(int mode)
 		break;
 	case 9:
 		//if ( (fp =fopen( "C:\\Rainbow_DRC\\WB_Data\\offline_traj_drc_no_step.txt","r")) == NULL )
-		if ( (fp =fopen( "..\\..\\..\\WB_Data\\offline_traj_drc_no_step.txt","r")) == NULL )
+		if ( (fp =fopen( "..\\..\\WB_Data\\offline_traj_drc_no_step.txt","r")) == NULL )
 		{
 			printf("Data file offline_traj_drc_no_step.txt was not found\n");		
 			return 1;
@@ -8651,7 +8651,7 @@ int LoadParameter_ComputedTorque(void)
 	int i;
 	FILE *fp;
 	//if ( (fp =fopen( "C:\\Rainbow_DRC\\WB_Data\\gain_gravity.txt","r")) == NULL )
-	if ( (fp =fopen( "..\\..\\..\\WB_Data\\gain_gravity.txt","r")) == NULL )
+	if ( (fp =fopen( "..\\..\\WB_Data\\gain_gravity.txt","r")) == NULL )
 	{
 		printf("Data file gain_gravity.txt was not found\n");		
 		return 1;
@@ -8666,7 +8666,7 @@ int LoadParameter_ComputedTorque(void)
 
 
 	//if ( (fp =fopen( "C:\\Rainbow_DRC\\WB_Data\\gain_task.txt","r")) == NULL )
-	if ( (fp =fopen( "..\\..\\..\\WB_Data\\gain_task.txt","r")) == NULL )
+	if ( (fp =fopen( "..\\..\\WB_Data\\gain_task.txt","r")) == NULL )
 	{
 		printf("Data file gain_task.txt was not found\n");		
 		return 1;
@@ -8681,7 +8681,7 @@ int LoadParameter_ComputedTorque(void)
 
 	
 	//if ( (fp =fopen( "C:\\Rainbow_DRC\\WB_Data\\friction.txt","r")) == NULL )
-	if ( (fp =fopen( "..\\..\\..\\WB_Data\\friction.txt","r")) == NULL )
+	if ( (fp =fopen( "..\\..\\WB_Data\\friction.txt","r")) == NULL )
 	{
 		printf("Data file friction.txt was not found\n");		
 		return 1;

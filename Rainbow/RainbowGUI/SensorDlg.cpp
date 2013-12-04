@@ -98,7 +98,7 @@ void CSensorDlg::OnSetoffset()
 		pSharedMemory->CommandFlag = SET_IMU_OFFSET;
 		Sleep(10);
 		//fp = fopen("C:\\Rainbow_DRC\\WB_Data\\imu_offset.txt","w");
-		fp = fopen("..\\..\\..\\WB_Data\\imu_offset.txt","w");
+		fp = fopen("..\\..\\WB_Data\\imu_offset.txt","w");
 		fprintf(fp,"%f %f", pSharedMemory->CommandDataFloat[0], pSharedMemory->CommandDataFloat[1]);
 		fclose(fp);
 	}
@@ -114,12 +114,12 @@ BOOL CSensorDlg::OnInitDialog()
 	float temp1,temp2;
 
 	//fp = fopen("C:\\Rainbow_DRC\\WB_Data\\imu_offset.txt","r");
-	fp = fopen("..\\..\\..\\WB_Data\\imu_offset.txt","r");
+	fp = fopen("..\\..\\WB_Data\\imu_offset.txt","r");
 	
 	if(fp == NULL)
 	{
 		//AfxMessageBox("C:\\Rainbow_DRC\\WB_Data\\imu_offset.txt was not found!!");
-		AfxMessageBox("..\\..\\..\\WB_Data\\imu_offset.txt was not found!!");
+		AfxMessageBox("..\\..\\WB_Data\\imu_offset.txt was not found!!");
 		temp1 = 0.f;
 		temp2 = 0.f;
 	}

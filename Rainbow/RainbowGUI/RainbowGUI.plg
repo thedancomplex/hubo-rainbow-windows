@@ -7,7 +7,7 @@
 </h3>
 <h3>Command Lines</h3>
 Creating command line "rc.exe /l 0x409 /fo"Release/RainbowGUI.res" /d "NDEBUG" /d "_AFXDLL" "C:\hubo-rainbow-windows\Rainbow\RainbowGUI\RainbowGUI.rc"" 
-Creating temporary file "C:\DOCUME~1\hubo\LOCALS~1\Temp\RSP11.tmp" with contents
+Creating temporary file "C:\DOCUME~1\hubo\LOCALS~1\Temp\RSP3D.tmp" with contents
 [
 /nologo /MD /W3 /GX /O2 /I "C:\Program Files\IntervalZero\RTX\include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/RainbowGUI.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
 "C:\hubo-rainbow-windows\Rainbow\RainbowGUI\BipedDlg.cpp"
@@ -29,14 +29,14 @@ Creating temporary file "C:\DOCUME~1\hubo\LOCALS~1\Temp\RSP11.tmp" with contents
 "C:\hubo-rainbow-windows\Rainbow\RainbowGUI\UStatusDlg.cpp"
 "C:\hubo-rainbow-windows\Rainbow\RainbowGUI\WalkingDlg.cpp"
 ]
-Creating command line "cl.exe @C:\DOCUME~1\hubo\LOCALS~1\Temp\RSP11.tmp" 
-Creating temporary file "C:\DOCUME~1\hubo\LOCALS~1\Temp\RSP12.tmp" with contents
+Creating command line "cl.exe @C:\DOCUME~1\hubo\LOCALS~1\Temp\RSP3D.tmp" 
+Creating temporary file "C:\DOCUME~1\hubo\LOCALS~1\Temp\RSP3E.tmp" with contents
 [
 /nologo /MD /W3 /GX /O2 /I "C:\Program Files\IntervalZero\RTX\include" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/RainbowGUI.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
 "C:\hubo-rainbow-windows\Rainbow\RainbowGUI\StdAfx.cpp"
 ]
-Creating command line "cl.exe @C:\DOCUME~1\hubo\LOCALS~1\Temp\RSP12.tmp" 
-Creating temporary file "C:\DOCUME~1\hubo\LOCALS~1\Temp\RSP13.tmp" with contents
+Creating command line "cl.exe @C:\DOCUME~1\hubo\LOCALS~1\Temp\RSP3E.tmp" 
+Creating temporary file "C:\DOCUME~1\hubo\LOCALS~1\Temp\RSP3F.tmp" with contents
 [
 rtapi_w32.lib winmm.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/RainbowGUI.pdb" /machine:I386 /out:"Release/RainbowGUI.exe" /libpath:"C:\Program Files\IntervalZero\RTX\lib" 
 ".\Release\BipedDlg.obj"
@@ -60,15 +60,15 @@ rtapi_w32.lib winmm.lib /nologo /subsystem:windows /incremental:no /pdb:"Release
 ".\Release\WalkingDlg.obj"
 ".\Release\RainbowGUI.res"
 ]
-Creating command line "link.exe @C:\DOCUME~1\hubo\LOCALS~1\Temp\RSP13.tmp"
+Creating command line "link.exe @C:\DOCUME~1\hubo\LOCALS~1\Temp\RSP3F.tmp"
 <h3>Output Window</h3>
 Compiling resources...
 Compiling...
 StdAfx.cpp
 Compiling...
 BipedDlg.cpp
-C:\hubo-rainbow-windows\Rainbow\RainbowGUI\BipedDlg.cpp(225) : warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
-C:\hubo-rainbow-windows\Rainbow\RainbowGUI\BipedDlg.cpp(291) : warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+C:\hubo-rainbow-windows\Rainbow\RainbowGUI\BipedDlg.cpp(226) : warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+C:\hubo-rainbow-windows\Rainbow\RainbowGUI\BipedDlg.cpp(292) : warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
 CommThread.cpp
 DemoTest2Dlg.cpp
 DemoTestDlg.cpp
@@ -82,19 +82,19 @@ LStatusDlg.cpp
 PresetDlg.cpp
 RainbowGUI.cpp
 RainbowGUIDlg.cpp
-C:\hubo-rainbow-windows\Rainbow\RainbowGUI\RainbowGUIDlg.cpp(563) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
 C:\hubo-rainbow-windows\Rainbow\RainbowGUI\RainbowGUIDlg.cpp(564) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
 C:\hubo-rainbow-windows\Rainbow\RainbowGUI\RainbowGUIDlg.cpp(565) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-C:\hubo-rainbow-windows\Rainbow\RainbowGUI\RainbowGUIDlg.cpp(567) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+C:\hubo-rainbow-windows\Rainbow\RainbowGUI\RainbowGUIDlg.cpp(566) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
 C:\hubo-rainbow-windows\Rainbow\RainbowGUI\RainbowGUIDlg.cpp(568) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
 C:\hubo-rainbow-windows\Rainbow\RainbowGUI\RainbowGUIDlg.cpp(569) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-C:\hubo-rainbow-windows\Rainbow\RainbowGUI\RainbowGUIDlg.cpp(571) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+C:\hubo-rainbow-windows\Rainbow\RainbowGUI\RainbowGUIDlg.cpp(570) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
 C:\hubo-rainbow-windows\Rainbow\RainbowGUI\RainbowGUIDlg.cpp(572) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
 C:\hubo-rainbow-windows\Rainbow\RainbowGUI\RainbowGUIDlg.cpp(573) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-C:\hubo-rainbow-windows\Rainbow\RainbowGUI\RainbowGUIDlg.cpp(575) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+C:\hubo-rainbow-windows\Rainbow\RainbowGUI\RainbowGUIDlg.cpp(574) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
 C:\hubo-rainbow-windows\Rainbow\RainbowGUI\RainbowGUIDlg.cpp(576) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
 C:\hubo-rainbow-windows\Rainbow\RainbowGUI\RainbowGUIDlg.cpp(577) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
-C:\hubo-rainbow-windows\Rainbow\RainbowGUI\RainbowGUIDlg.cpp(1082) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+C:\hubo-rainbow-windows\Rainbow\RainbowGUI\RainbowGUIDlg.cpp(578) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+C:\hubo-rainbow-windows\Rainbow\RainbowGUI\RainbowGUIDlg.cpp(1083) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
 SensorDlg.cpp
 UserDlg.cpp
 UStatusDlg.cpp
