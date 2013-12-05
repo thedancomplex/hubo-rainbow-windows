@@ -669,7 +669,7 @@ typedef enum
 #define DRC_BR_RSP		25.f
 #define DRC_BR_RSR		-20.f
 #define DRC_BR_RSY		0.f
-#define DRC_BR_REB		-60.f //-150.f
+#define DRC_BR_REB		-90.f //-150.f
 #define DRC_BR_RWY		0.f
 #define DRC_BR_RWP		0.f
 #define DRC_BR_RWY2		0.f
