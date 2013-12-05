@@ -1032,7 +1032,9 @@
 #define IDC_ARM_COMPL                   1584
 #define IDC_EDIT99                      1585
 #define IDC_EDIT100                     1586
+#define IDC_BUTTON_CAN_ONOFF            1586
 #define IDC_EDIT101                     1587
+#define IDC_STATIC_CAN_ONOFF            1587
 #define IDC_EDIT102                     1588
 #define IDC_EDIT103                     1589
 #define IDC_EDIT104                     1590
@@ -1104,7 +1106,7 @@
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NEXT_RESOURCE_VALUE        148
 #define _APS_NEXT_COMMAND_VALUE         32771
-#define _APS_NEXT_CONTROL_VALUE         1586
+#define _APS_NEXT_CONTROL_VALUE         1588
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif

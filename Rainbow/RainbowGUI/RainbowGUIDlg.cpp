@@ -94,6 +94,7 @@ BEGIN_MESSAGE_MAP(CRainbowGUIDlg, CDialog)
 	ON_BN_CLICKED(IDC_CONTROLONOFF, OnControlonoff)
 	ON_WM_TIMER()
 	ON_MESSAGE(WM_COMM_READ, OnReceive)    // Communication Message Handleer
+	ON_BN_CLICKED(IDC_BUTTON_CAN_ONOFF, OnButtonCanOnoff)
 	//}}AFX_MSG_MAP
 END_MESSAGE_MAP()
 
@@ -1153,4 +1154,23 @@ int CRainbowGUIDlg::findmax(float data[], unsigned int n, float *result_max, uns
 	*i_max = n_max;
 
 	return 0;
+}
+void CRainbowGUIDlg::OnButtonCanOnoff() 
+{
+	// TODO: Add your control notification handler code here
+	        if(pSharedMemory->FLAG_OFF_CAN_ALL == 0) {
+        /* Turn CAN OFF */
+                pSharedMemory->FLAG_OFF_CAN_ALL = 1;
+                GetDlgItem(IDC_STATIC_CAN_ONOFF)->SetWindowText("OFF");
+                GetDlgItem(IDC_BUTTON_CAN_ONOFF)->SetWindowText("CAN ON");
+                
+                
+        }
+        else if(pSharedMemory->FLAG_OFF_CAN_ALL == 1) {
+                /* Turn CAN ON */
+                pSharedMemory->FLAG_OFF_CAN_ALL = 0;
+                GetDlgItem(IDC_STATIC_CAN_ONOFF)->SetWindowText("ON");
+                GetDlgItem(IDC_BUTTON_CAN_ONOFF)->SetWindowText("CAN OFF");
+        }
+	
 }
